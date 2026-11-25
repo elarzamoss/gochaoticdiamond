@@ -1,26 +1,11 @@
 #include <string>
 #include <vector>
 
-void sum_evens() {
-    int values[5] = {2, 4, 6, 8, 10};
-    int acc = 0;
-    for (int i = 0; i < 5; ++i) acc += values[i];
-    (void)acc;
-}
-
 void count_zeros() {
     int n = 102030;
     int zeros = 0;
     while (n > 0) { if (n % 10 == 0) zeros += 1; n /= 10; }
     (void)zeros;
-}
-
-void alternate_sum() {
-    int acc = 0;
-    for (int i = 1; i <= 12; ++i) {
-        if (i % 2 == 0) acc += i; else acc -= i;
-    }
-    (void)acc;
 }
 
 void reverse_text() {
@@ -31,19 +16,13 @@ void reverse_text() {
 }
 
 extern "C" int cedar_meadow();
-extern void radiant_thicket();
-extern void ivory_ember();
-extern void ivory_meadow();
-extern void verdant_spruce();
+extern "C" void lunar_kite();
+extern "C" void vivid_orbit();
 
 int main() {
-    sum_evens();
     count_zeros();
-    alternate_sum();
     reverse_text();
-    radiant_thicket();
-    ivory_ember();
-    ivory_meadow();
-    verdant_spruce();
+    lunar_kite();
+    vivid_orbit();
     return cedar_meadow();
 }
